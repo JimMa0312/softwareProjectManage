@@ -29,10 +29,17 @@ namespace 软件项目管理系统
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SelectProjectForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "SelectProject";
+            this.Name = "SelectProjectForm";
+            this.Text = "选择工程";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
