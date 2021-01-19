@@ -77,6 +77,7 @@ namespace 软件项目管理系统
             this.选择项目ToolStripMenuItem.Name = "选择项目ToolStripMenuItem";
             this.选择项目ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.选择项目ToolStripMenuItem.Text = "选择项目";
+            this.选择项目ToolStripMenuItem.Click += new System.EventHandler(this.选择项目ToolStripMenuItem_Click);
             // 
             // 关闭项目ToolStripMenuItem
             // 
