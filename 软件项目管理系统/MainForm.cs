@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace 软件项目管理系统
@@ -21,7 +15,9 @@ namespace 软件项目管理系统
         {
             OpenFileDialog openProjectFileDialog = new OpenFileDialog();
 
-            openProjectFileDialog.Filter = "(*.pjt)|";
+            string fileSuffix = ConfigurationManager.AppSettings["ProjectFileSuffix"].ToString();
+
+            openProjectFileDialog.Filter = $"(*.{fileSuffix})|";
 
 
             if(openProjectFileDialog.ShowDialog() == DialogResult.OK)
